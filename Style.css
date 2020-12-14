@@ -1,0 +1,146 @@
+body {
+    padding:0 10px;
+    margin:0 calc(50% - 350px);
+    width: 700px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(44, 51, 69);
+    height: 100vh;
+}
+
+
+.container {
+   max-width: 700px;
+   margin: auto;
+   padding: 0 35px;
+}
+
+.first-section {
+    display: flex;
+    justify-content: left;
+}
+
+.ruler {
+    height: 2px;
+    background-color: rgb(211, 217, 231);
+    margin: 10px -35px;
+    border: none;
+}
+
+hr {
+    background-color: rgb(211, 217, 231);
+    border: none;
+    height: 2px;
+    margin: 50px 0;
+}
+
+.ind {
+    color: red;
+}
+
+.name-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-ind {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.name-input {
+    border: 1px solid rgb(211, 217, 231);
+    border-radius: 5px;
+    width: 47%;
+    height: 30px;
+}
+
+.name-place {
+    color: rgb(87, 100, 126);
+    width: 47%;
+    margin-top: 15px;
+    font-size:12px;
+}
+
+
+.full-field {
+    border: 1px solid rgb(211, 217, 231);
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: ;
+}
+
+select {
+    border: 1px solid rgb(211, 217, 231);
+    border-radius: 5px;
+    color:  rgb(87, 100, 126);
+    width: 47%;
+    height: 30px;
+    background-color: transparent;
+}
+
+option:not(:first-of-type) {
+    color: rgb(44, 51, 69);
+}
+
+textarea {
+    border: 1px solid rgb(211, 217, 231);
+    border-radius: 5px;
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.table-headers {
+    background-color: rgb(195, 202, 216);
+    border: 1px solid rgb(211, 217, 231);
+    height: 50px;
+    text-align: center;
+}
+
+.table-data {
+    border: 1px solid rgb(211, 217, 231);
+}
+
+.table-number {
+    text-align: left;
+    padding-left: 5px;
+    width: 50px;
+}
+
+.table-cell {
+    height: 50px;
+    border: none;
+    width: 97%;
+}
+
+#submit-btn{
+    background-color: rgb(24, 189, 91);
+    border: 1px solid rgb(24, 189, 91);
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    height: 50px;
+    margin: 50px 0;
+    width: 200px;
+}
+
+.focused:focus-within {
+    background-color: rgb(241, 245, 255);
+    border-radius: 10px;
+}
+
+.div-cont {
+    padding: 10px;
+}

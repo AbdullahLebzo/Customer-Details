@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Details</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="first-section div-cont">
+            <h1>Customer Details:</h1>
+        </div>
+        <hr  class="ruler">
+        <div class="focused div-cont">
+            <div class="labels">
+                <h3>Full Name <span class="ind">*</span></h3>
+            </div>
+            <div>
+                <form name="myForm" action="">
+                    <div class="name-field">
+                        <input type="text" class="name-input must">
+                        <input type="text" class="name-input must">
+                    </div>
+                    <div class="name-ind">
+                        <span class="name-place">First Name</span>
+                        <span class="name-place">Last Name</span>
+                    </div>
+            </div>    
+        </div>
+            <div class="address-section div-cont focused">
+                <div class="labels">
+                    <h3>Address <span class="ind">*</span></h3>
+                </div>
+                <div>
+                    <input type="text" class="full-field must">
+                </div>
+                <div class="name-ind">
+                    <span class="name-place">Street Address</span>
+                </div>
+                <div>
+                    <input type="text" class="full-field">
+                </div>
+                <div class="name-ind">
+                    <span class="name-place must">Street Address Line 2</span>
+                </div>
+                <div class="name-field">
+                    <input type="text" class="name-input must">
+                    <input type="text" class="name-input must">
+                </div>
+                <div class="name-ind">
+                    <span class="name-place">City</span>
+                    <span class="name-place">State/Province</span>
+                </div>
+                <div>
+                    <input type="text" class="full-field" placeholder="somewhere">
+                </div>
+                <div class="name-ind">
+                    <span class="name-place">Postal / Zip Code</span>
+                </div>
+            </div>
+            <div class="div-cont focused">
+                <div class="labels">
+                    <h3>Phone Number <span class="ind">*</span></h3>
+                </div>
+                <div class="name-field">
+                    <input type="text" class="name-input must" placeholder="(000)-000-0000">
+                </div> 
+            </div>
+            <div class="div-cont focused">
+                <div class="labels">
+                    <h3>Email</h3>
+                </div>
+                <div class="name-field">
+                    <input type="text" class="name-input" placeholder="ex: email@yahoo.com">
+                </div> 
+                <div class="name-ind">
+                    <span class="name-place">example@example.com</span>
+                </div>
+            </div>
+            <hr>
+            <div class="div-cont focused">
+                <div class="labels">
+                    <h3>How did you hear about us? <span class="ind">*</span></h3>
+                </div>
+                <div class="name-field">
+                    <select name="heard" id="select-list" class="must">
+                        <option value="" disabled selected id="list-placeholder">Please Select</option>
+                        <option value="friend">From a friend</option>
+                        <option value="website">From a website</option>
+                        <option value="ad">From an ad</option>
+                    </select>
+                </div>
+            </div>
+            <div class="div-cont focused">
+                <div class="labels">
+                    <h3>Feedback about us:</h3>
+                </div>
+                <div class="name-field">
+                    <textarea name="feedback" id="" cols="100" rows="10"></textarea>
+                </div> 
+            </div>
+            <div class="div-cont focused">
+                <div class="labels">
+                    <h3>Suggestions if any for further improvements:</h3>
+                </div>
+                <div class="name-field">
+                    <textarea name="feedback" id="" cols="100" rows="10"></textarea>
+                </div> 
+            </div>
+            <div>
+                <div class="labels">
+                    <h3>Will you be willing to recommend us</h3>
+                </div>
+                <div>
+                    <div class="check">
+                        <div>
+                            <input type="checkbox" name="recommendation" id="yes" value="yes">
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="recommendation" id="maybe" value="maybe">
+                            <label for="maybe">Maybe</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="recommendation" id="no" value="no">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+             <div class="div-cont">
+                <div class="labels div-cont">
+                    <h3>Please give reference of any two people whom you feel:</h3>
+                </div>
+                <div class="div-cont">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td class="table-headers">Full Name</td>
+                            <td class="table-headers">Address</td>
+                            <td class="table-headers">Contact Number</td>
+                        </tr>
+                        <tr>
+                            <td class="table-number table-headers">1</td>
+                            <td class="table-data"><input type="text" class="table-cell"></td>
+                            <td class="table-data"><input type="text" class="table-cell"></td>
+                            <td class="table-data"><input type="text" class="table-cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-number table-headers">2</td>
+                            <td class="table-data"><input type="text" class="table-cell"></td>
+                            <td class="table-data"><input type="text" class="table-cell"></td>
+                            <td class="table-data"><input type="text" class="table-cell"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div> 
+            <hr  class="ruler">
+            <div class="div-cont">
+                <input type="submit" name="submit" id="submit-btn">
+            </div>      
+        </form>
+    </div>
+    <script type="text/javascript" src="./Script.js"></script>
+
+</body>
+</html>
