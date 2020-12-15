@@ -5,81 +5,91 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="first-section div-cont">
+        <div class="first-section div-cont sections">
             <h1>Customer Details:</h1>
         </div>
-        <hr  class="ruler">
-        <div class="focused div-cont">
-            <div class="labels">
-                <h3>Full Name <span class="ind">*</span></h3>
-            </div>
-            <div>
-                <form name="myForm" action="">
-                    <div class="name-field">
-                        <input type="text" class="name-input must">
-                        <input type="text" class="name-input must">
-                    </div>
+        <div class="focused div-cont sections">
+            <form name="myForm" id="my-form">
+            <div class='alert-field'>
+                <div class="labels">
+                    <h3>Full Name <span class="ind">*</span></h3>
+                </div>
+                <div class="name-field">
+                    <input type="text" class="name-input must" name="fname">
+                    <input type="text" class="name-input must" name="lname">
+                </div>
+                <div class="name-ind name-section">
+                    <span class="name-place">First Name</span>
+                    <span class="name-place">Last Name</span>
+                </div>
                     <div class="name-ind">
-                        <span class="name-place">First Name</span>
-                        <span class="name-place">Last Name</span>
+                        <span class="name-place alert"><span class="material-icons ">info</span> This field is required</span>
                     </div>
             </div>    
         </div>
-            <div class="address-section div-cont focused">
+            <div class="address-section div-cont focused sections">
                 <div class="labels">
                     <h3>Address <span class="ind">*</span></h3>
                 </div>
                 <div>
-                    <input type="text" class="full-field must">
+                    <input type="text" class="full-field must" id="address">
                 </div>
                 <div class="name-ind">
                     <span class="name-place">Street Address</span>
                 </div>
                 <div>
-                    <input type="text" class="full-field">
+                    <input type="text" class="full-field must">
                 </div>
                 <div class="name-ind">
-                    <span class="name-place must">Street Address Line 2</span>
+                    <span class="name-place">Street Address Line 2</span>
                 </div>
                 <div class="name-field">
-                    <input type="text" class="name-input must">
-                    <input type="text" class="name-input must">
+                    <input type="text" class="name-input must"  id="city">
+                    <input type="text" class="name-input must" id="state">
                 </div>
                 <div class="name-ind">
                     <span class="name-place">City</span>
                     <span class="name-place">State/Province</span>
                 </div>
                 <div>
-                    <input type="text" class="full-field" placeholder="somewhere">
+                    <input type="text" class="full-field must" placeholder="somewhere" id="postal">
                 </div>
                 <div class="name-ind">
                     <span class="name-place">Postal / Zip Code</span>
                 </div>
+                <div class="name-ind">
+                    <span class="name-place alert"><span class="material-icons">info</span> This field is required</span>
+                </div>
             </div>
-            <div class="div-cont focused">
+            <div class="div-cont focused sections">
                 <div class="labels">
                     <h3>Phone Number <span class="ind">*</span></h3>
                 </div>
                 <div class="name-field">
-                    <input type="text" class="name-input must" placeholder="(000)-000-0000">
-                </div> 
+                    <input type="text" class="name-input must" placeholder="(000)-000-0000" id="phone">
+                </div>
+                <div class="name-ind">
+                    <span class="name-place alert"><span class="material-icons">info</span> This field is required</span>
+                </div>
             </div>
-            <div class="div-cont focused">
+            <div class="div-cont focused sections">
                 <div class="labels">
                     <h3>Email</h3>
                 </div>
                 <div class="name-field">
-                    <input type="text" class="name-input" placeholder="ex: email@yahoo.com">
+                    <input type="email" class="name-input" placeholder="ex: email@yahoo.com">
                 </div> 
                 <div class="name-ind">
                     <span class="name-place">example@example.com</span>
                 </div>
             </div>
             <hr>
-            <div class="div-cont focused">
+            <div class="div-cont focused sections">
                 <div class="labels">
                     <h3>How did you hear about us? <span class="ind">*</span></h3>
                 </div>
@@ -91,8 +101,11 @@
                         <option value="ad">From an ad</option>
                     </select>
                 </div>
+                <div class="name-ind">
+                    <span class="name-place alert"><span class="material-icons">info</span> This field is required</span>
+                </div>
             </div>
-            <div class="div-cont focused">
+            <div class="div-cont focused sections">
                 <div class="labels">
                     <h3>Feedback about us:</h3>
                 </div>
@@ -100,7 +113,7 @@
                     <textarea name="feedback" id="" cols="100" rows="10"></textarea>
                 </div> 
             </div>
-            <div class="div-cont focused">
+            <div class="div-cont focused sections">
                 <div class="labels">
                     <h3>Suggestions if any for further improvements:</h3>
                 </div>
@@ -108,9 +121,9 @@
                     <textarea name="feedback" id="" cols="100" rows="10"></textarea>
                 </div> 
             </div>
-            <div>
+            <div class="recommend-section sections">
                 <div class="labels">
-                    <h3>Will you be willing to recommend us</h3>
+                    <h3>Will you be willing to recommend us?</h3>
                 </div>
                 <div>
                     <div class="check">
@@ -129,8 +142,7 @@
                     </div>
                 </div>
             </div>
-            </div>
-             <div class="div-cont">
+            <div class="div-cont reference-section sections">
                 <div class="labels div-cont">
                     <h3>Please give reference of any two people whom you feel:</h3>
                 </div>
@@ -158,9 +170,11 @@
                 </div>
             </div> 
             <hr  class="ruler">
-            <div class="div-cont">
+            <div class="div-cont submit-section sections">
                 <input type="submit" name="submit" id="submit-btn">
             </div>      
+            </div>
+  
         </form>
     </div>
     <script type="text/javascript" src="./Script.js"></script>

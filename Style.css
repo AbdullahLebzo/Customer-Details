@@ -1,4 +1,5 @@
 body {
+    background-color: rgb(207, 200, 200);
     padding:0 10px;
     margin:0 calc(50% - 350px);
     width: 700px;
@@ -7,14 +8,15 @@ body {
     height: 100vh;
 }
 
-
 .container {
+    background-color: white;    
    max-width: 700px;
    margin: auto;
    padding: 0 35px;
 }
 
 .first-section {
+    border-bottom: 1px solid rgb(211, 217, 231);
     display: flex;
     justify-content: left;
 }
@@ -143,4 +145,41 @@ table {
 
 .div-cont {
     padding: 10px;
+}
+
+.recommend-section {
+    padding-left: 10px;
+}
+
+.submit-section {
+    padding-left: 50px;
+}
+
+.material-icons {
+    position: relative;
+    top: 5px;
+    color:
+}
+
+.alert {
+    background-color: red;
+    border-radius: 5px;
+    display: none;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    width: 25%;
+    color: white;
+}
+
+.error {
+    border-color: red;
+}
+
+.shown-alert {
+    display: initial;
+}
+
+.alert-section {
+    background-color: rgb(255, 237, 237);
+    border-radius: 5px;
 }
