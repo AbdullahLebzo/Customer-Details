@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const names = document.querySelectorAll('.must');
   const alerts = document.querySelectorAll('.alert');
   const fields = document.querySelectorAll('.focused');
+  const inputs = document.querySelectorAll('.name-input');
 
   let personData = {};
   let passedNameChecks = false;
@@ -71,7 +72,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   let sources = {};
   let passedSources = false;
 
-  function checkSource () {
+  function checkSource() {
     const source = names[8].value;
     if (!source) {
       fields[4].classList.add('alert-section');
@@ -85,8 +86,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
       };
     }
   }
+  function validateEmail(email) {
+    if (inputs[5].value != '' || inputs[5].value) {
+      const re = /\S+@\S+\.\S+/;
+      return re.test(email);
+    }
+  }
 
-  let 
+  console.log(validateEmail('anystring@anystring.anystring'));
 
   function hasErrors() {
     if (!passedNameChecks || !passedAddressData || !passedPhoneNumber
@@ -95,15 +102,32 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
   }
 
+  const successful = document.querySelector('.successful');
+  const overlay = document.querySelector('.overlay');
+
+  function success() {
+    successful.classList.add('success');
+    overlay.classList.add('success');
+  }
+
+  function closePopup() {
+    successful.classList.remove('success');
+    overlay.classList.remove('success');
+  }
+
+  overlay.addEventListener('click', closePopup());
+
   function onSubmit(event) {
     event.preventDefault();
     checkName();
     checkAddress();
     checkPhone();
     checkSource();
+    validateEmail();
     if (hasErrors()) {
       return;
     }
+    success();
     console.log('Personal Data', personData);
     console.log('Address Data', addressData);
     console.log('Phone Number', phoneNumber);

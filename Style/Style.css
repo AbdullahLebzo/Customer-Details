@@ -151,7 +151,7 @@ table {
     padding-left: 10px;
 }
 
-.submit-section {
+.submit-section {   
     padding-left: 50px;
 }
 
@@ -182,4 +182,40 @@ table {
 .alert-section {
     background-color: rgb(255, 237, 237);
     border-radius: 5px;
+}
+
+.check-icon {
+    position: relative;
+    bottom: 150px;
+    right: 150px;
+    transform: scale(0.4);
+}
+
+.successful {
+        background-color: rgb(250, 245, 245);
+        display: none;
+        height: 60%;
+        position: fixed;
+        top: 15%;
+        left: 28%;
+        width: 45%;
+        z-index: 10;
+}
+
+.successful-text{
+    position: relative;
+    bottom: 350px;
+    right: 10px;
+    text-align: center;
+}
+
+.overlay {
+    position:absolute;
+    display: none;
+    min-height: 300%;
+    min-width: 300%;
+}
+
+.success {
+    display: initial;
 }
